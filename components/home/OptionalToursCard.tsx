@@ -27,7 +27,7 @@ export function OptionalToursCard() {
                       <Euro className="h-3 w-3" /> {tour.priceEur}
                     </span>
                   ) : (
-                    <span className="text-xs text-neutral-500">{tour.note}</span>
+                    <span className="text-xs text-neutral-500">현지 문의</span>
                   )}
                 </div>
               </div>
