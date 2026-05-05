@@ -37,6 +37,17 @@ export default async function DayPage({ params }: Props) {
           <SpotCard key={spot.id} spot={spot} />
         ))}
         <HotelCard day={day} />
+        <p className="text-center text-xs text-neutral-400 pt-2">
+          하나투어 ·{" "}
+          <a
+            href="https://msstour.hanatour.com/trp/pkg/CHPC0PKG0200M100?pkgCd=EWQ111260523TW5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-neutral-600"
+          >
+            상품코드 EWQ111260523TW5
+          </a>
+        </p>
       </div>
     </div>
   );

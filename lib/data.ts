@@ -7,7 +7,7 @@ export const TOUR_INFO = {
   flightInbound: "TW0406",
   airline: "티웨이항공",
   guideFeeEur: 90,
-  kakaoUrl: "https://pf.kakao.com/_fxiRVM",
+  kakaoUrl: "http://pf.kakao.com/_gIxlNb/chat",
 };
 
 export type Category =
