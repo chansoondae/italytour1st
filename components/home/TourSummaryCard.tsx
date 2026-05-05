@@ -1,9 +1,8 @@
 import { TOUR_INFO } from "@/lib/data";
+import { Download } from "lucide-react";
 
 const ITEMS = [
   { icon: "📅", label: "여행기간", value: "7박 9일 (5/23 토 ~ 5/31 일)" },
-  { icon: "✈️", label: "가는편", value: "5/23(토) 12:35 → 19:15  TW0405" },
-  { icon: "✈️", label: "오는편", value: "5/30(토) 21:15 → 5/31(일) 16:10  TW0406" },
   { icon: "🚌", label: "이동수단", value: "전용 버스" },
   { icon: "🏨", label: "숙박", value: "4성급 호텔 7박 + 기내 1박" },
   { icon: "🍽️", label: "식사", value: "호텔식, 현지식, 한식(삼겹살), 와인 시음" },
@@ -19,6 +18,23 @@ export function TourSummaryCard() {
           <h2 className="text-white font-bold text-sm">투어 핵심 정보</h2>
         </div>
         <div className="divide-y divide-neutral-100">
+          {/* 항공편 */}
+          <div className="flex items-start gap-3 px-4 py-3">
+            <span className="text-lg leading-none mt-0.5">✈️</span>
+            <div className="flex-1">
+              <p className="text-xs text-neutral-500 font-medium">항공편</p>
+              <p className="text-sm text-neutral-900 font-semibold mt-0.5">5/23(토) 12:35 → 19:15  TW0405</p>
+              <p className="text-sm text-neutral-900 font-semibold mt-0.5">5/30(토) 21:15 → 5/31(일) 16:10  TW0406</p>
+            </div>
+            <a
+              href="/이탈리아1차.pdf"
+              download
+              className="flex items-center gap-1 text-xs font-semibold text-[#008c45] bg-[#e8f5ed] rounded-full px-2.5 py-1 shrink-0 hover:bg-[#d0eddb]"
+            >
+              <Download className="h-3 w-3" />
+              이티켓
+            </a>
+          </div>
           {ITEMS.map(({ icon, label, value }) => (
             <div key={label} className="flex items-start gap-3 px-4 py-3">
               <span className="text-lg leading-none mt-0.5">{icon}</span>
