@@ -4,7 +4,7 @@ import { TopBar } from "@/components/layout/TopBar";
 import { DayChipNav } from "@/components/layout/DayChipNav";
 
 export const metadata: Metadata = {
-  title: "이탈리아 아트 투어 9일 | 몽트래블",
+  title: "이탈리아 아트 투어 9일 | 아트프렌즈",
   description: "2026년 5월 23일~31일 이탈리아 아트 투어 9일 일정표. 로마, 피렌체, 베네치아, 밀라노, 친퀘테레, 돌로미티.",
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇮🇹</text></svg>",
