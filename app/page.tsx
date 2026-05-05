@@ -1,65 +1,51 @@
-import Image from "next/image";
+import { HeroBanner } from "@/components/home/HeroBanner";
+import { TourSummaryCard } from "@/components/home/TourSummaryCard";
+import { DayHighlightCards } from "@/components/home/DayHighlightCard";
+import { InclusionAccordion } from "@/components/home/InclusionAccordion";
+import { KakaoChannelButton } from "@/components/common/KakaoChannelButton";
+import { Phone } from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <div className="space-y-6 pb-6">
+      <HeroBanner />
+      <TourSummaryCard />
+      <DayHighlightCards />
+      <InclusionAccordion />
+
+      {/* 인솔자 연락처 CTA */}
+      <div className="mx-4">
+        <div className="bg-white rounded-2xl border border-neutral-200 shadow-sm p-5 text-center space-y-3">
+          <div className="flex items-center justify-center gap-2 text-neutral-700">
+            <Phone className="h-4 w-4" />
+            <span className="font-semibold text-sm">인솔자 연락처</span>
+          </div>
+          <p className="text-sm font-medium text-neutral-800">차가운순대 (서찬수)</p>
+          <p className="text-sm text-neutral-600">010-5663-5153</p>
+          <div className="flex items-center justify-center gap-3">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="tel:010-5663-5153"
+              className="inline-flex items-center gap-2 rounded-2xl bg-[#008c45] px-5 py-3 text-sm font-bold text-white active:scale-95 transition hover:bg-[#006d35]"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <Phone className="h-4 w-4" />
+              전화하기
+            </a>
+            <KakaoChannelButton />
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+
+      <p className="text-center text-xs text-neutral-400 pb-2">
+        하나투어 ·{" "}
+        <a
+          href="https://msstour.hanatour.com/trp/pkg/CHPC0PKG0200M100?pkgCd=EWQ111260523TW5"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-2 hover:text-neutral-600"
+        >
+          상품코드 EWQ111260523TW5
+        </a>
+      </p>
     </div>
   );
 }

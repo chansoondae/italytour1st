@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 이탈리아 아트 투어 9일 — 일정표 앱
 
-## Getting Started
+하나투어 단독 패키지 **이탈리아 아트 투어 9일** (상품코드: EWQ111260523TW5)을 위한 모바일 전용 일정 안내 웹앱입니다.
 
-First, run the development server:
+- 여행 기간: 2026년 5월 23일(토) ~ 5월 31일(일)
+- 항공: 티웨이항공 인천↔로마 직항 (TW0405 / TW0406)
+
+---
+
+## 주요 기능
+
+- **홈**: 투어 핵심 정보(항공편, 숙박, 컨셉 등), 9일 일정 카드, 포함/불포함 사항, 인솔자 연락처
+- **일별 상세**: 각 날짜별 관광지·식사·이동 일정, 구글맵 연동, 유튜브 영상 플레이어
+- **여행 정보**: 포함/불포함 사항, 선택관광, EES 안내, 소매치기 주의, 환전·유심·옷차림 등
+- 하단 네비게이션으로 홈 / Day 1~9 / 정보 탭 빠른 이동
+
+## 일정 요약
+
+| 일차 | 날짜 | 주요 일정 |
+|------|------|-----------|
+| Day 1 | 5/23(토) | 인천 출발 → 로마 도착 |
+| Day 2 | 5/24(일) | 로마 → 피렌체 / 팔라쪼 스트로치 특별전 · 우피치 미술관 · 미켈란젤로 언덕 |
+| Day 3 | 5/25(월) | 베네치아 / 페기 구겐하임 미술관 · 베니스 비엔날레 (자르디니 · 아르세날레) |
+| Day 4 | 5/26(화) | 트레비소 → 베네치아 → 파도바 / 스크로베니 예배당 |
+| Day 5 | 5/27(수) | 밀라노 → 친퀘테레 → 피사 → 몬테카티니 |
+| Day 6 | 5/28(목) | 몬테카티니 → 몬테풀차노 → 발도르차 → 로마 |
+| Day 7 | 5/29(금) | 로마 → 폼페이 · 소렌토 → 로마 |
+| Day 8 | 5/30(토) | 로마 시내 / 바티칸 박물관 · 성 베드로 대성당 · 콜로세움 · 트레비 분수 · 스페인 광장 · 판테온 등 → 로마 출발 |
+| Day 9 | 5/31(일) | 인천 도착 |
+
+## 기술 스택
+
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+## 로컬 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[http://localhost:3000](http://localhost:3000) 에서 확인할 수 있습니다.
