@@ -28,7 +28,7 @@ export function HeroBanner() {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/70" />
       <div className="absolute inset-0 flex flex-col justify-end px-4 pb-5">
         <div className="flex items-center gap-2 mb-2">
           <span className="bg-[#008c45] text-white text-xs font-bold rounded-full px-3 py-1">{dday}</span>
