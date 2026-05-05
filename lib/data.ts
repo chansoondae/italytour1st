@@ -491,16 +491,6 @@ export const DAYS: DayData[] = [
         googleMapsUrl: mapsUrl("Sorrento Italy"),
       },
       {
-        id: "d7-4",
-        category: "optional",
-        nameKo: "포지타노 & 아말피 해안 (선택관광)",
-        city: "아말피",
-        description: "세계에서 가장 아름다운 해안 도로 중 하나. 절벽에 매달린 듯 자리한 포지타노 마을과 아말피 해안의 절경. 최소 10명 참가 시 진행.",
-        imagePath: "/images/pompeii/positano-amalfi.jpg",
-        googleMapsUrl: mapsUrl("Positano"),
-        duration: "반나절",
-      },
-      {
         id: "d7-5",
         category: "transport",
         nameKo: "폼페이 → 로마 이동",
@@ -673,6 +663,5 @@ export const DAYS: DayData[] = [
 export const OPTIONAL_TOURS = [
   { day: 4, name: "베네치아 수상택시", priceEur: 60, duration: "약 30분" },
   { day: 4, name: "베네치아 곤돌라", priceEur: 60, duration: "30~40분" },
-  { day: 7, name: "포지타노 & 아말피 해안", priceEur: null, duration: "반나절", note: "최소 10명 / 현지 문의" },
   { day: 8, name: "벤츠 밴 로마 투어", priceEur: 70, duration: "약 3시간" },
 ];
