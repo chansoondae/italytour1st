@@ -17,11 +17,22 @@ export function SpotCard({ spot }: Props) {
           <div className="w-0.5 flex-1 bg-neutral-200 mt-2" />
         </div>
         <div className="pb-6 pt-1 flex-1">
+          {spot.time && (
+            <p className="text-xs font-bold text-neutral-400 mb-0.5">{spot.time}</p>
+          )}
           <p className="text-sm font-semibold text-neutral-700">{spot.nameKo}</p>
           {spot.duration && (
             <p className="text-xs text-neutral-500 mt-0.5 flex items-center gap-1">
               <Clock className="h-3 w-3" /> {spot.duration}
             </p>
+          )}
+          {spot.description && (
+            <p className="text-xs text-neutral-500 mt-1">{spot.description}</p>
+          )}
+          {spot.googleMapsUrl && (
+            <div className="mt-2">
+              <GoogleMapsButton url={spot.googleMapsUrl} size="sm" />
+            </div>
           )}
         </div>
       </div>

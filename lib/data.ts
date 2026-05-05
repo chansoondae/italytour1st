@@ -69,6 +69,14 @@ export const DAYS: DayData[] = [
     accommodationMapsUrl: mapsUrl("Palace 2000 Hotel Rome"),
     spots: [
       {
+        id: "d1-0",
+        category: "transport",
+        time: "09:35",
+        nameKo: "인천공항 T1 미팅 (선택)",
+        city: "인천",
+        description: "인솔자와 미리 만나고 싶은 분은 09:35 인천공항 제1터미널로 오세요. 꼭 모두 모여야 하는 것은 아닙니다. 개별 수속이 가능한 분은 각자 진행하신 후 게이트에서 만나셔도 됩니다.",
+      },
+      {
         id: "d1-1",
         category: "flight",
         time: "12:35",
